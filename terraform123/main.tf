@@ -3,3 +3,6 @@ provider "aws" {
   access_key = "AKIASBDEDVLNHJ3OSCPM"
   secret_key = "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"
 }
+resource "aws_s3_bucket" "mys3bucket" {
+  bucket = "mys3bucket@138790"
+}
