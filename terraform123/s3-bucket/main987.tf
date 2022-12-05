@@ -5,7 +5,7 @@ provider "aws" {
 }
 resource "aws_security_group" "https_server_sg" {
   name = "https_server_sg"
-  vpc_id = "vpc-0bacc0924135da0a2"
+  vpc_id = "vpc-05aeefbb34eca4d98"
 
   ingress {
     from_port = 80
@@ -32,7 +32,7 @@ resource "aws_instance" "https_server" {
   instance_type = "t2.micro"
 
   vpc_security_group_ids = [aws_security_group.https_server_sg.id]
-  subnet_id = "subnet-037866570e01446ec"
+  subnet_id = "subnet-08757509e554b1361"
 
   connection {
     type = "ssh"
